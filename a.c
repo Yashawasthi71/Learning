@@ -27,4 +27,27 @@ int main()
            return 0;
 }*/
 
+/* #include <stdio.h>   
+
+void Floyd(int rows)
+{
+  int i = 1, k = 1;
+  for (i = 1; i <= rows; i++)
+  {
+    for (int j = 1; j <= i; j++, k++)
+    {
+      printf("%d", k);
+    }
+    printf("\n");
+  }
+}
+
+int main()
+{
+  int row;
+  printf(" Enter the number of rows:");
+  scanf("%d", &row);
+  Floyd(row);
+  return 0;
+}*/
 
