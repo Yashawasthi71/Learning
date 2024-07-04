@@ -93,7 +93,8 @@ int main()
         printf("odd = %d\n", countodd);
     return 0;
 }*/
-// read two array & store sum in third array 
+
+/* read two array & store sum in third array
 
 #include <stdio.h>
 
@@ -118,4 +119,13 @@ int main()
         printf("%d\n", array1[i] + array2[i]);
     }
     return 0;
+}*/
+
+#include <stdio.h>
+int main()
+{
+    int a[2][3] = {{2, 5, 3}, {3, 7, 9}};
+    printf("%d\n", a[0][0]);
+    return 0;
 }
+
