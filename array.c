@@ -121,11 +121,73 @@ int main()
     return 0;
 }*/
 
-#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
     int a[2][3] = {{2, 5, 3}, {3, 7, 9}};
     printf("%d\n", a[0][0]);
     return 0;
-}
+}*/
 
+/* #include <stdio.h>
+
+int main()
+{
+
+    int a[2][5];
+    int sum = 0;
+    printf("enter integers:");
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            scanf("%d", &a[i][j]);
+        }
+    }
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            printf("%d ", a[i][j]);
+            sum += a[i][j];
+        }
+        printf("\n");
+    }
+    printf("%d\n", sum);
+    return 0;
+}*/
+
+// program to print transpose
+
+#include <stdio.h>
+
+int main()
+{
+    int d[3][4];
+    printf("Enter Elements:\n");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            scanf("%d", &d[i][j]);
+        }
+    }
+    printf("Before Transpose\n");
+    for(int i = 0 ; i < 3 ; i++){
+        for(int j = 0 ; j < 4 ; j++ ){
+            printf("%d",d[i][j]);
+        }
+        printf("\n");
+
+    }
+    printf("After Transpose\n");
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%d ", d[j][i]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
