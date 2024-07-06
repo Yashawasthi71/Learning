@@ -157,7 +157,7 @@ int main()
     return 0;
 }*/
 
-// program to print transpose
+/* program to print transpose
 
 #include <stdio.h>
 
@@ -190,4 +190,40 @@ int main()
         printf("\n");
     }
     return 0;
+}*/
+
+/* read and print array by function
+
+#include <stdio.h>
+
+void read_arr(int *x, int N)
+{
+    for (int i = 0; i < N; i++)
+    {
+        scanf("%d", &x[i]);
+    }
 }
+
+void print_arr(int *x, int N)
+{
+    for (int i = 0; i < N; i++)
+        
+    {
+        printf("%d ", x[i]);
+    }
+}
+int main()
+{
+    int N;
+    printf("sizeofarray:");
+    scanf("%d", &N);
+    int array[N];
+    printf("Enter Number of Elements:\n");
+    read_arr(array, N);
+    print_arr(array, N);
+    return 0;
+}*/
+
+
+
+
