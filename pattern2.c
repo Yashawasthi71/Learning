@@ -1,29 +1,72 @@
-/*
-
-   1 2 3 4 3 2 1
-     1 2 3 2 1
-       1 2 1
-         1
-
-
-#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
-
-    int n;
-    scanf("%d", &n);
-
-    for (int i = 1; i < n; i++)
+    int num = 5;
+    for (int i = 1; i <= num; i++)
     {
-        for (int j = 1; j <  i; j++)
+        for (int j = 1; j <= i; j++)
         {
-            printf(" ");
+            printf("*");
         }
-        for (int j = 1; j < n - i + 1; j++)
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+int main()
+{
+    int num = 5;
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num; j++)
         {
-            printf("%d", j);
+            printf("*");
         }
-        for (int j = n - i + 1; j >= 1; j--)
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+int main()
+{
+    int n = 5;
+    for (int i = 0; i < n; i++) // 1
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 5; j >= i; j--)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (int i = 5; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+
+int main()
+{
+    int num = 5;
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= i; j++)
         {
             printf("%d", j);
         }
@@ -32,70 +75,85 @@ int main()
     return 0;
 }*/
 
-/*#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
-    int n;
-    scanf("%d",&n);
-    for (int i = n; i >= 1; i--)
+    int num;
+    printf("Enter number of Rows:");
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
     {
-        for (int j = n-i; j >=1; j--){
-            printf(" ");
-        }
-        for( int j = i ; j>= 1; j-- ){
+        for (int j = num; j >= i; j--)
+        {
             printf("%d", j);
         }
-            printf("\n");
+        printf("\n");
     }
     return 0;
-}
+}*/
 
-/*
+/* #include <stdio.h>
 
-4 3 2 1
-  3 2 1
-    2 1
-      1
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num - i + 1; j++)
+        {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
 
-*/
-
-/* printing table using functions 
+/* #include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = num; j >= i; j--)
+        {
+            printf(" ");
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; i + j <= num; j++) // it is done by if and else statment
+        {
+            printf(" ");
+        }
+        for (int j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
 
 #include <stdio.h>
 
-
-
-short get_num();
-void print_table(short num);
-
-int main(){
-
-short num ;
-
-num = get_num();
-print_table(num);
-
-return 0;
-}
- 
- short get_num()
- {
-  short value ;
-
-  printf( " Enter a number for tables \n");
-  scanf("%hi",&value);
-  return value ;
- }
-
- void print_table( short num)
- {
-
-  int i;
-for (i = 1; i <= 10; i++)
+int main()
 {
-printf("%hi * %d = %d \n", num , i , num*i);
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d", i);
+        }
+        printf("\n");
+    }
+    return 0;
 }
-
-
- }*/
-

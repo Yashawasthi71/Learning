@@ -84,7 +84,7 @@ void hash_pattern()
     }
 }*/
 
-/*#include <stdio.h>
+/* 4 #include <stdio.h>
 
 void func(int a, int b)
 {
@@ -101,8 +101,9 @@ int main(void)
     return 0;
 }*/
 
-// temperatue question
-/* #include <stdio.h>
+/* 5 temperatue question
+
+ #include <stdio.h>
 
 int main()
 {
