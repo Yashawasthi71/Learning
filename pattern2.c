@@ -244,7 +244,7 @@ int main()
         return 0;
 }*/
 
-#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
     int num;
@@ -261,7 +261,7 @@ int main()
         }
         printf("\n");
     }
-    for (int i = num - 1; i >= 1; i++)
+    for (int i = num - 1; i >= 1; i--)
     {
         for (int j = 1; j <= (num - i); j++)
         {
@@ -270,6 +270,131 @@ int main()
         for (int j = 1; j <= 2 * i - 1; j++)
         {
             printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for (int i = num - 1; i >= 1; i--)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%c", 64 + j);
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num - i + 1; j++)
+        {
+            printf("%c", 64 + j);
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%c", 64 + i);
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+/* #include <stdio.h>
+
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num; j++)
+        {
+            if (i == 1 || j == 1 || i == num || j == num)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+#include <stdio.h>
+int main()
+{
+    int num;
+    scanf("%d", &num);
+    for (int i = 1; i <= num; i++)
+    {
+        for (int j = 1; j <= num - i; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 1; j <= 2 * i + 1; j++)
+        {
+            if ( i + j == 6 || i == num)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
         printf("\n");
     }
