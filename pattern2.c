@@ -374,7 +374,7 @@ int main()
     return 0;
 }*/
 
-#include <stdio.h>
+/* #include <stdio.h>
 int main()
 {
     int num;
@@ -387,7 +387,7 @@ int main()
         }
         for (int j = 1; j <= 2 * i + 1; j++)
         {
-            if ( i + j == 6 || i == num)
+            if (i + j == 6 || i == num)
             {
                 printf("*");
             }
@@ -399,4 +399,5 @@ int main()
         printf("\n");
     }
     return 0;
-}
+}*/
+
